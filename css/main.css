@@ -1,0 +1,284 @@
+body{
+    /*Siempre quitar todos los margenes*/
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+}
+
+/*********************************************************************************************************************************************************
+***************************************************/
+/*NAVEGACIÓN*/
+
+header {
+    
+    width: 100%;
+    height: 60px;
+
+}
+
+/*Acceder a Nav a través de header*/
+header nav{
+    display: flex;
+    justify-content: flex-end; 
+    /*al final del documento a la derecha*/
+}
+
+/*Ir a la clase nav-right section dentro del elemento nav que está dentro de header*/
+
+header nav .nav-right-section {
+    /*se accede al elemento nav y la clase nav-right-section*/
+    
+    width: 300px;
+    height: auto;
+    /*auto quiere decir la altura siempre va a estar contenida*/
+    list-style: none; 
+    /*eliminar puntos*/
+    display: flex;
+    /* justificar al centro de acuerdo al elemento*/
+    justify-content: center;
+    /*justifica el elemento de forma vertical*/
+    align-items: center;
+}
+
+a {
+    /*detalles de las anclas/links*/
+    text-decoration: none;
+}
+
+/*anclas de nav para agregar espacio*/
+
+nav .nav-right-section a{
+    /*a del elemento ancla*/
+    /*color del texto*/
+    color:rgba(0, 0, 0, .87);
+    /*márgenes entre anclas*/
+    margin-right: 20px;
+    font-size: large;
+}
+
+nav .nav-right-section .menu { 
+ /*para el icono de puntitos*/
+    background-image: url("https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png");
+    width: 30px;
+    height: 30px;
+    /*que el elemento esté contenido dentro del elemento más grande*/
+    background-size: contain;
+    margin-right: 20px;
+    background-repeat: none;
+    
+}
+
+/*Imagen del usuario*/
+
+nav .nav-right-section img{
+    /*bordes redondeados*/
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    background-repeat: none;
+    
+}
+
+
+/**************************************************************************************************************************************************************************/ 
+/*MAIN*/
+main{
+    margin-top: 150px;
+
+    /*Centrar el elemento*/
+    text-align: center;
+
+}
+
+main .main-logo {
+    
+    width: 530px;
+    margin-bottom: 40px;
+    /*vertical//horizontal*/
+    /*para mantener el elemento siempre centrado*/
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 120px;
+
+
+} 
+
+main .main-input{
+    
+    width: 530px; /*tiene que ser lo mismo que main logo*/
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 525;
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+
+}
+
+main .main-input input{
+    height: 35px;
+    border: none; /*quitarle el borde al input*/
+    outline: none; /*quitar el borde cuando input está activo*/
+    width: 450px;
+}
+
+main .main-input-container:hover{
+    /*efecto hover (sombra) al poner el mause sin accionar */
+    border-color: #dfe1e500;
+    /*valor 1 es el desplazamiento horizontal
+    valor 2 es vertical, valor 3 da un blur
+    valor 4, expansión de la sombra */
+    box-shadow: 0px 1px 6px 0px #20212447;
+    
+
+
+
+}
+/*Lupa para el navegador*/
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain; /*contenida en el elemento más grande*/
+    background-position: center;
+    /*pROPIEDAD PARA QUE NO SE REPITA*/
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-left: 15px;
+
+
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    padding-left: 15px;
+    margin-left: -30px;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    padding-left: 6%;
+    margin-left: 11px;
+
+
+}
+
+main .main-buttons {
+ 
+    width: 530px;
+    margin: 0 auto; /* para que siempre esté centrado*/
+
+
+}
+
+main .main-buttons div{
+    
+    /*inline block los pone en una sola línea y editar el width*/
+    display: inline-block;
+}
+main .main-buttons button {
+    border: 0;
+    height: 35px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    padding: 0 15px;
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+
+
+}
+
+main .main-buttons button:hover{
+    box-shadow: 0 1px 1px #20212447;
+    border: 1px solid #dadce0; 
+    color: #202124;
+}
+
+/*********************************************************************************************************************************************************
+***************************************************/
+/*Footer*/
+
+
+footer {
+
+    background-color: #F2F2F2;
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+    font-size: 15px;
+}
+
+footer p{
+    width: auto;
+    height: auto;
+    color: #70757A;
+    padding: 15px 30px;
+    border-bottom: 1px solid #E1E2E5;
+
+}
+footer section .lists{
+    display: flex;
+    display: inline-block;   
+}
+
+section .lists a:hover{
+    text-decoration: underline;
+}
+
+footer .left-list{
+    
+    color: #70757A;
+    list-style: none; 
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px; 
+    
+   
+}
+
+footer .left-list a{
+    color: #70757A;
+    /*márgenes entre anclas*/
+    margin-right: 20px;
+   
+}
+
+footer .right-list {   
+    color: #70757A;
+    width: auto;
+    height: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    
+}
+footer .right-list a{
+    color: #70757A;
+    /*márgenes entre anclas*/
+    margin-left: 20px;
+  
+}
